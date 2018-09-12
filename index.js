@@ -17,10 +17,12 @@ function nestedTarget() {
 
 //define a function deepestChild()
 //it should pull the most deeply nested child from div#grand-node
-function deepestChild(){
-  var list = document.getElementById("grand-node");
-for (var i = 0; i < list.length; i++) {
-    querySelectorAll()
-    return list[i].innerHTML; 
-}
+function deepestChild() {
+  let node = document.getElementById('grand-node'); //grab the top node
+  let nextNode = node.children[0]; //get the first child of next node; set it to a variable
+
+ 	//here, use a while loop to check if nextNode is truthy; if it is, set node to nextNode and nextNode to the first child of node
+  }
+
+  return node; //once the while loop is done, return node. 
 }
