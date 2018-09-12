@@ -16,7 +16,13 @@ function nestedTarget() {
 // }
 
 function increaseRankBy(n) {
-  let node = document.getElement by
+  let node = document.getElementsByClassName(".ranked-list");
+  let nextEl = node.children[i].inner.html;
+  //increase the ranks of each element by n 
+  for(i = 0; i<node.length; i++) {
+    parseInt(node.children[i].innerHTML);
+    node.children[i] += n;
+  }
 }
 
 //define a function deepestChild()
