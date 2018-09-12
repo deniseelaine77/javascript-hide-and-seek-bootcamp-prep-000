@@ -15,14 +15,13 @@ function nestedTarget() {
 //   // }
 // }
 
+//let node = document.getElementsByClassName(".ranked-list").children.innerHTML;
+//  let nextEl = node.children[i].inner.html;
+
 function increaseRankBy(n) {
-  let node = document.getElementsByClassName(".ranked-list");
-  let nextEl = node.children[i].inner.html;
-  //increase the ranks of each element by n 
-  for(var i = 0; i<node.length; i++) {
-    parseInt(node.children[i].innerHTML);
-    node.children[i] += n;
-  }
+  for(var i = 0; i < node.length; i++){
+    parseInt(document.querySelectorAll(".ranked-list")[i].children[i].innerHTML) += n
+}
 }
 
 //define a function deepestChild()
