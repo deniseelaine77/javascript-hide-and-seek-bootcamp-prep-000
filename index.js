@@ -15,10 +15,12 @@ function nestedTarget() {
 //   // }
 // }
 
+//define a function deepestChild()
+//it should pull the most deeply nested child from div#grand-node
 function deepestChild(){
   var list = document.getElementById("grand-node");
 for (var i = 0; i < list.length; i++) {
     querySelectorAll()
-    return list[i].innerHTML; //second console output
+    return list[i].innerHTML; 
 }
 }
