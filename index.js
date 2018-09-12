@@ -51,7 +51,7 @@ function increaseRankBy(n) {
     let children = rankedLists[i].children;
 
     //the tricky part; now for every child above, loop over all of the elements and change the innerHTML, using another for loop
-    for (let j = 0; j < children.length; j++){
+    for (let j = 0, k = children.length; j < k; j++){
       var newRank =(children[j].innerHTML);
       return newRank += n
     }
