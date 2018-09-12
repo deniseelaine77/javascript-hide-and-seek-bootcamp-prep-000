@@ -55,7 +55,7 @@ function increaseRankBy(n) {
     //the tricky part; now for every child above, loop over all of the elements and change the innerHTML, using another for loop
     for (let j = 0, k = children.length; j < k; j++){
       let newRank = parseInt(children[j].innerHTML); 
-      newRank = newRank[j].innerHTML += n
+      newRank[j] = newRank[j] += n
     }
 }
 }
