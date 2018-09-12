@@ -43,3 +43,18 @@ function deepestChild() {
 //     return parseInt(newRank) + n
 // }
 // }
+
+function increaseRankBy(n) {
+  const rankedLists = document.querySelectorAll('.ranked-list'); //grab all the ranked lists
+
+  for (let i = 0, l = rankedLists.length; i < l; i++) { //use a for loop to grab all of the children
+    let children = rankedLists[i].children;
+
+    //the tricky part; now for every child above, loop over all of the elements and change the innerHTML, using another for loop
+    for (let j = 0; j < children.length; j++){
+      var newRank =(children[j].innerHTML);
+      return newRank += n
+    }
+    }
+
+}
