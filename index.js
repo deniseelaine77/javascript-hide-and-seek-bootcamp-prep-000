@@ -22,6 +22,10 @@ function deepestChild() {
   let nextNode = node.children[0]; //get the first child of next node; set it to a variable
 
  	//here, use a while loop to check if nextNode is truthy; if it is, set node to nextNode and nextNode to the first child of node
+ 	while(nextNode) {
+ 	  node = nextNode;
+ 	  nextNode = node.children[0]
+ 	}
   }
 
   return node; //once the while loop is done, return node. 
