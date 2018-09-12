@@ -20,7 +20,8 @@ function nestedTarget() {
 
 function increaseRankBy(n) {
   for(var i = 0; i < node.length; i++){
-    parseInt(document.querySelectorAll(".ranked-list")[i].children[i].innerHTML) += n
+    var newRank = document.querySelectorAll(".ranked-list")[i].children[i].innerHTML;
+    return parseInt(newRank) + newRank
 }
 }
 
