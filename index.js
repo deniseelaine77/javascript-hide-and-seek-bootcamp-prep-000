@@ -15,6 +15,10 @@ function nestedTarget() {
 //   // }
 // }
 
+function increaseRankBy(n) {
+  let node = document.getElement by
+}
+
 //define a function deepestChild()
 //it should pull the most deeply nested child from div#grand-node
 function deepestChild() {
